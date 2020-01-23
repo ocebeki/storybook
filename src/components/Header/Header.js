@@ -36,9 +36,7 @@ const Header = ({ children }) => {
   useEffect(() => {
     window.addEventListener('scroll', () => {
       const newY = window.pageYOffset;
-
       setIsHidden(y < newY);
-
       y = newY;
     })
   })
